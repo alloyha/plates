@@ -1,0 +1,11 @@
+% ----------------------------------------------------------
+% PARTE
+% ----------------------------------------------------------
+\chapter{Resultados}
+% ----------------------------------------------------------
+
+Os resultados obtidos no projeto dizem respeito à coerência deste com a teoria. De acordo com o modelo adotado, obtém-se pleno desacoplamento do parâmetro “matiz” em relação aos demais. Após testes, pode-se obter resultados conclusivos a respeito deste fato e fazer uso destes para identificação do robô assim como aquisição de sua orientação.
+
+Além disso, o uso de imagens para aplicação em robótica geralmente é acometido de ruído. Estes, em caso geral, provém do processo de digitalização, da má iluminação do recinto, do não-cumprimento do teorema de Nyquist para amostragem desta, entre outros. Como pode-se perceber, muitos são os motivos para tal fenômeno. Entretanto, existem formas de amenizá-lo. Isto dá-se a partir da implementação de filtros assim como operadores morfológicos, como filtro mediano ou gaussiano e fechamento de imagem, respectivamente. Seu tipo assim como tamanho devem ser ajustados para obtenção de melhores resultados.
+ 
+Além disso, observa-se que a aquisição de dados, i.e., posição e orientação do robô a partir do processamento de dados não é a todo instante disponível. Este inconveniente é recorrente e já vastamente estudado pela comunidade científica. A solução mais comum para sua solução consiste na implementação de um Filtro de Kalman: Isto dá-se a partir da fusão dos dados provenientes do encoder e da câmera possibilitando, assim, informações mais confiáveis e manobras do robô de forma mais segura. 
